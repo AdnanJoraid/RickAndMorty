@@ -16,9 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Rick and Morty API" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAu-XH-maU">
-                                <rect key="frame" x="40" y="404" width="311" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-image" translatesAutoresizingMaskIntoConstraints="NO" id="sEM-u9-a6g">
+                                <rect key="frame" x="75" y="53" width="240" height="433"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Rick and Morty API" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAu-XH-maU">
+                                <rect key="frame" x="40" y="557" width="311" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,6 +28,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="IAu-XH-maU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0eQ-TU-gvV"/>
+                            <constraint firstItem="IAu-XH-maU" firstAttribute="top" secondItem="sEM-u9-a6g" secondAttribute="bottom" constant="71" id="DkE-Zc-KIL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sEM-u9-a6g" secondAttribute="trailing" constant="75" id="Dup-7Y-fTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IAu-XH-maU" secondAttribute="trailing" constant="39" id="P5F-Er-a2X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IAu-XH-maU" secondAttribute="bottom" constant="216" id="R8A-pE-PBg"/>
+                            <constraint firstItem="sEM-u9-a6g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="XMq-jI-VMW"/>
+                            <constraint firstItem="IAu-XH-maU" firstAttribute="top" secondItem="sEM-u9-a6g" secondAttribute="bottom" constant="71" id="YaW-L4-JJd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,6 +45,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launch-image" width="577" height="433"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
